@@ -46,7 +46,7 @@ while getopts "h?e:x:t:p:l:L:s:o:O:P:cA" opt; do
             CTAGS_EXE=$OPTARG
             ;;
         x)
-            CTAGS_ARGS="$CTAGS_ARGS --exclude=$OPTARG"
+            CTAGS_ARGS="$CTAGS_ARGS --exclude='$OPTARG'"
             ;;
         t)
             TAGS_FILE=$OPTARG
